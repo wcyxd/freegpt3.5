@@ -1,3 +1,11 @@
 {
     "serverless": true
+    "build_commands": [
+        "go mod download",
+        "go build -ldflags \"-s -w\" -o /app/aurora ."
+    ],
+    "start_commands": [
+        "apk add --no-cache tzdata",
+        "/app/aurora"
+    ]
 }
