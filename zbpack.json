@@ -1,5 +1,5 @@
 {
-    "serverless": true
+    "serverless": true, 
     "build_commands": [
         "go mod download",
         "go build -ldflags \"-s -w\" -o /app/aurora ."
